@@ -26,7 +26,5 @@ if ($b === $c) {
     echo "$b is identical to $c\n";
 } elseif ($b == $c) {
 	echo "$b is equal to $c\n";
-} else ($b != $c) {
-	echo "$b is not equal to $c\n";
 }
 
