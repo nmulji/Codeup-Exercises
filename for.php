@@ -8,7 +8,11 @@ fwrite(STDOUT, "Enter a ending number\n");
 
 $ending_number = trim(fgets(STDIN));
 
+fwrite(STDOUT, "Enter an increment\n");
 
-for ($i = $starting_number; $i <= $ending_number; $i++) {
+$user_increment = trim(fgets(STDIN));
+
+
+for ($i = $starting_number; $i <= $ending_number; $i+=$user_increment) {
 	echo "\$i has a value of {$i}\n";
 }
