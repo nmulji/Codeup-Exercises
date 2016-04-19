@@ -1,5 +1,8 @@
 <?php
 
+$a = 30;
+$b = 10;
+
 function add($a, $b)
 {
     return $a + $b;
@@ -25,13 +28,13 @@ function modulus($a, $b)
 	return $a % $b;
 }
 
-echo add(1, 2) . PHP_EOL;
+echo add($a, $b) . PHP_EOL;
 
-echo subtract(20, 8) . PHP_EOL;
+echo subtract($a, $b) . PHP_EOL;
 
-echo multiply(5, 4) . PHP_EOL;
+echo multiply($a, $b) . PHP_EOL;
 
-echo divide(60, 15) . PHP_EOL;
+echo divide($a, $b) . PHP_EOL;
 
-echo modulus(50, 8) . PHP_EOL;
+echo modulus($a, $b) . PHP_EOL;
 
