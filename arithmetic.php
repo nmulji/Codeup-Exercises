@@ -5,6 +5,10 @@ $b = 10;
 
 function add($a, $b)
 {
+	if(!is_numeric($a) || !is_numeric($b)) {
+		return "Error!! Must be number!\n";
+	} 
+    
     return $a + $b;
 }
 
