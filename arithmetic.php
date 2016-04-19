@@ -24,7 +24,11 @@ function multiply($a, $b)
 
 function divide($a, $b)
 {
-    return $a / $b;
+	if($a == 0 || $b == 0) {
+		return "Error!! You can't divide by 0!\n";
+	} 
+    
+    return $a + $b;
 }
 
 function modulus($a, $b)
