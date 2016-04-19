@@ -1,5 +1,7 @@
 <?php
 
+$year = 1950;
+
 $books = array(
     'The Hobbit' => array(
         'published' => 1937,
@@ -26,8 +28,9 @@ $books = array(
 
 foreach ($books as $bookTitle => $bookInfo) {
 	echo "Title: {$bookTitle}\n";
-	foreach ($bookInfo as $key => $value) {
-		echo "$key : $value\n";
-	}
+	if($bookInfo['published'] > $year)
+		foreach ($bookInfo as $key => $value) {
+			echo "$key : $value\n";
+		} 
 	echo "=========================".PHP_EOL;
 }
