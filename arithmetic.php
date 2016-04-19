@@ -17,7 +17,14 @@ function multiply($a, $b)
 
 function divide($a, $b)
 {
-    $a / $b;
+    return $a / $b;
 }
 
-// Add code to test your functions here
+echo add(1, 2) . PHP_EOL;
+
+echo subtract(20, 8) . PHP_EOL;
+
+echo multiply(5, 4) . PHP_EOL;
+
+echo divide(60, 15) . PHP_EOL;
+
