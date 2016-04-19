@@ -24,9 +24,9 @@ $books = array(
 );
 
 
-foreach ($books as $key => $book) {
-	echo "Title: {$key}\n";
-	foreach ($book as $key => $value) {
+foreach ($books as $bookTitle => $bookInfo) {
+	echo "Title: {$bookTitle}\n";
+	foreach ($bookInfo as $key => $value) {
 		echo "$key : $value\n";
 	}
 	echo "=========================".PHP_EOL;
