@@ -51,6 +51,7 @@ foreach ($companies as $companyName => $people) {
     $companies[$companyName] = $people;
 }
 
+asort($companies);
 print_r($companies);
 
 
