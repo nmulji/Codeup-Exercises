@@ -2,17 +2,13 @@
 
 $physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
-$physicistsArray = explode (', ', $physicistsString);
 
-var_dump($physicistsArray);
+
+$physicistsArray = explode (', ', $physicistsString);
 
 $lastPhysicist = array_pop($physicistsArray);
 
-var_dump($physicistsArray);
-
-$newPhysicistArray = $physicistsArray;
-
-$result = implode (', ', $newPhysicistArray);
+$result = implode (', ', $physicistsArray);
 
 echo $result . "," . " and " . $lastPhysicist . PHP_EOL;
 
