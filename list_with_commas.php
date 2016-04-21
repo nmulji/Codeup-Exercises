@@ -1,7 +1,11 @@
 <?php
 
 
-function humanizedList ($array) {
+function humanizedList ($array, $alphabetical = true) {
+
+	if ($alphabetical !== false) {
+		sort($array);
+	}
 
 $lastPhysicist = array_pop($array);
 
