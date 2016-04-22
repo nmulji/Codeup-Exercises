@@ -12,12 +12,20 @@ function parseContacts($filename)
     foreach ($contentsArray as $key => $value) {
     	$innerArray = explode("|", $value);
     	$nameArray = ['Name' => $innerArray[0], 'Number' => $innerArray[1]];
-    	var_dump(($nameArray));
+
+    	$numberPop = array_pop($nameArray);
+
+    	$numberDashes = substr($numberPop, 0, 3) . "-" . substr($numberPop, 3, 3) . "-" . substr($numberPop, 6, 4); 
+
+    	$numberPush = array_push($nameArray, $numberDashes);
+
+    	var_dump($numberDashes);
+
+    	var_dump($nameArray);
     }
     
     fclose($handle);
-    array_push($contacts, $contents);
-    
+  
     return $contentsArray;
 }
 
