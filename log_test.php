@@ -2,8 +2,7 @@
 
 require_once 'Log.php';
 
-$log = new Log;
-$log->fileName = 'log-2016-05-02.log';
+$log = new Log('cli');
 
 echo $log->logMessage("INFO", "ERROR");
 echo $log->info("This is an info message.");
