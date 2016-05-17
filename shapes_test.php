@@ -6,6 +6,10 @@ require_once 'square.php';
 
 
 
-$newSquare = new Square(2, 2);
+$newSquare = new Square(2);
 
 echo $newSquare->perimeter();
+
+$newRectangle = new Rectangle(1, 1);
+
+echo $newRectangle->area();
