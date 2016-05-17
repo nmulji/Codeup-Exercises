@@ -2,6 +2,10 @@
 
 require_once 'rectangle.php';
 
-$newArea = new Rectangle(8, 2);
+require_once 'square.php';
 
-echo $newArea->area();
+
+
+$newSquare = new Square(2, 2);
+
+echo $newSquare->perimeter();
